@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" data-textsize="base">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career Progression Portal | Ministry of Home Affairs — Design Concept</title>
+  <meta name="description" content="A design concept for the Ministry of Home Affairs Career Progression Portal — official pathways, skills information and transition support for Ex-Agniveers.">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Career Progression Portal | Ministry of Home Affairs — Design Concept">
+  <meta property="og:description" content="Built through service. Ready for what’s next. A design concept for the Ministry of Home Affairs Career Progression Portal.">
+  <meta property="og:image" content="assets/img/hero-army-1200.jpg">
+
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/newsreader-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero-army-2000.jpg" as="image" media="(min-width: 760px)">
+  <link rel="preload" href="assets/img/hero-army-1200.jpg" as="image" media="(max-width: 759px)">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <noscript>
+    <style>
+      .accordion__panel { grid-template-rows: 1fr !important; }
+      .accordion__panel-inner { padding-bottom: 26px !important; }
+      .accordion__icon { display: none; }
+      .accordion__trigger { cursor: default; }
+    </style>
+  </noscript>
+
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var prefs = JSON.parse(localStorage.getItem('mha-a11y-prefs') || '{}');
+      if (prefs.textSize === 'large' || prefs.textSize === 'xlarge') {
+        document.documentElement.setAttribute('data-textsize', prefs.textSize);
+      }
+      if (prefs.contrast) document.documentElement.classList.add('contrast-high');
+      if (prefs.motion) document.documentElement.classList.add('reduce-motion');
+    } catch (e) {}
+  </script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" data-header>
+    <div class="utility-bar">
+      <div class="container utility-bar__inner">
+        <p class="utility-bar__left">An initiative of the Ministry of Home Affairs</p>
+        <div class="utility-bar__right">
+          <button class="utility-link" type="button" data-a11y-open aria-haspopup="dialog" aria-controls="a11y-dialog">Accessibility</button>
+          <span class="utility-bar__sep" aria-hidden="true"></span>
+          <span class="concept-chip"><span class="concept-chip__dot" aria-hidden="true"></span>Design concept</span>
+          <a class="utility-link utility-link--ext" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Official portal <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-main">
+      <a class="brand" href="#top">
+        <img class="brand__emblem" src="assets/img/emblem.png" alt="National Emblem of India" width="60" height="100">
+        <span class="brand__identity">
+          <span class="brand__gov">Government of India</span>
+          <span class="brand__ministry">Ministry of Home Affairs</span>
+        </span>
+        <span class="brand__divider" aria-hidden="true"></span>
+        <span class="brand__portal">
+          <span class="brand__portal-name">Career Progression</span>
+          <span class="brand__portal-sub">Portal</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <a class="primary-nav__link" href="#top">Home</a>
+        <a class="primary-nav__link" href="#initiative">The initiative</a>
+        <a class="primary-nav__link" href="#pathways">Career pathways</a>
+        <a class="primary-nav__link" href="#how-it-works">How it works</a>
+        <a class="primary-nav__link" href="#opportunities">Opportunities</a>
+        <a class="primary-nav__link" href="#faqs">FAQs</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-btn" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">
+          Login
+          <span class="login-btn__arrow" aria-hidden="true">↗</span>
+          <span class="sr-only">(opens the official portal in a new tab)</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE MENU
+  ============================================================ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <div class="mobile-menu__inner">
+      <p class="eyebrow eyebrow--light mobile-menu__eyebrow">Navigation</p>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="#top"><span>00</span>Home</a>
+        <a href="#initiative"><span>01</span>The initiative</a>
+        <a href="#pathways"><span>02</span>Career pathways</a>
+        <a href="#how-it-works"><span>03</span>How it works</a>
+        <a href="#opportunities"><span>04</span>Opportunities</a>
+        <a href="#experience"><span>05</span>Experience</a>
+        <a href="#faqs"><span>06</span>FAQs</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--solid" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">Login to the official portal <span aria-hidden="true">↗</span></a>
+        <a class="mobile-menu__official" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Visit the official Career Progression Portal <span aria-hidden="true">↗</span></a>
+        <p class="mobile-menu__help">Sign-in helpdesk<br><a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+        <p class="mobile-menu__concept">Design concept · Not an official Government of India website.</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 759px)" srcset="assets/img/hero-army-1200.jpg">
+          <img src="assets/img/hero-army-2000.jpg"
+               alt="Indian Army personnel moving through a forest during a training exercise."
+               width="2000" height="1125" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light hero__eyebrow">
+            <span class="eyebrow__mark" aria-hidden="true"></span>
+            For Ex-Agniveers <span class="eyebrow__sep" aria-hidden="true">·</span> Ministry of Home Affairs
+          </p>
+          <h1 class="hero__title" id="hero-title">
+            Built through service.<br>
+            <em>Ready for what’s next.</em>
+          </h1>
+          <p class="hero__lede">
+            An official platform from the Ministry of Home Affairs, bringing career pathways, skills information and transition support for Ex-Agniveers into one place.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#pathways">Explore career pathways <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#initiative">Understand the initiative</a>
+          </div>
+          <a class="hero__signin" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">
+            Already registered? Sign in to the official portal
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container hero__foot">
+        <p>Career Progression Portal</p>
+        <p class="hero__foot-mid">Government of India <span aria-hidden="true">·</span> Ministry of Home Affairs</p>
+        <a class="hero__scroll" href="#credibility">
+          Scroll to explore
+          <span class="hero__scroll-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INSTITUTIONAL CREDIBILITY STRIP
+    ============================================================ -->
+    <section class="credibility" id="credibility" aria-label="Institutional information">
+      <div class="container credibility__grid">
+        <div class="credibility__item">
+          <p class="credibility__label"><span>01</span> Government of India</p>
+          <p class="credibility__value">Ministry of Home Affairs</p>
+          <p class="credibility__note">Nodal ministry for the further progression of Ex-Agniveers.</p>
+        </div>
+        <div class="credibility__item">
+          <p class="credibility__label"><span>02</span> Programme</p>
+          <p class="credibility__value">Agnipath Scheme</p>
+          <p class="credibility__note">A four-year engagement in the Armed Forces, launched in June 2022.</p>
+        </div>
+        <div class="credibility__item">
+          <p class="credibility__label"><span>03</span> Official platform</p>
+          <p class="credibility__value">Career Progression Portal</p>
+          <p class="credibility__note">The official portal is designed, developed and hosted by NIC.</p>
+        </div>
+        <div class="credibility__item">
+          <p class="credibility__label"><span>04</span> Assistance</p>
+          <p class="credibility__value">Sign-in helpdesk</p>
+          <p class="credibility__note"><a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MISSION / INTRODUCTION
+    ============================================================ -->
+    <section class="section mission" id="initiative" aria-labelledby="initiative-title">
+      <div class="container">
+        <div class="mission__grid">
+          <div class="mission__copy" data-reveal>
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__index">01</span> The initiative</p>
+            <h2 class="display display--lg" id="initiative-title">
+              Service shapes character.<br>
+              <em>Opportunity shapes the future.</em>
+            </h2>
+            <p class="lead">
+              Service builds capability. The Career Progression Portal exists to help that capability travel — from the Armed Forces into the next professional chapter.
+            </p>
+            <p class="body-copy">
+              As the nodal ministry under the Government of India (Allocation of Business) Rules, 1961, the Ministry of Home Affairs coordinates activities for the further progression of Ex-Agniveers. The portal is a comprehensive digital platform designed to support that progression and enable a transition from military service to civilian opportunity.
+            </p>
+            <p class="body-copy">
+              It is built for Ex-Agniveers after their engagement under the Agnipath Scheme — and for the authorised employers, departments and agencies that want to connect with them.
+            </p>
+
+            <dl class="fact-list">
+              <div class="fact-list__row">
+                <dt>Who it serves</dt>
+                <dd>Ex-Agniveers released from the Armed Forces under the Agnipath Scheme.</dd>
+              </div>
+              <div class="fact-list__row">
+                <dt>Who coordinates</dt>
+                <dd>Ministry of Home Affairs, Government of India.</dd>
+              </div>
+              <div class="fact-list__row">
+                <dt>What it supports</dt>
+                <dd>Access to employment opportunities, skills information and transition resources.</dd>
+              </div>
+            </dl>
+
+            <a class="link-arrow link-arrow--light" href="https://careerprogression.mha.gov.in/about" target="_blank" rel="noopener">
+              Read the official overview <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <figure class="mission__figure" data-reveal data-reveal-delay="120">
+            <div class="mission__image-wrap">
+              <img src="assets/img/mission-india-gate.jpg"
+                   alt="Indian Army soldiers in ceremonial uniform speaking together at India Gate, New Delhi."
+                   width="1200" height="1500" loading="lazy" decoding="async">
+              <span class="image-index" aria-hidden="true">MHA / 01</span>
+            </div>
+            <figcaption>
+              <span>Indian Army personnel at India Gate, New Delhi.</span>
+              <a href="#credits">Image credit</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <aside class="mission__note" data-reveal>
+          <p class="mission__note-label">Important</p>
+          <p>Access to information and opportunity does not guarantee selection or employment. Eligibility, selection and outcomes are determined by the recruiting organisation under the applicable rules.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CAREER PATHWAYS
+    ============================================================ -->
+    <section class="section section--paper pathways" id="pathways" aria-labelledby="pathways-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow eyebrow--dark"><span class="eyebrow__index">02</span> Career pathways</p>
+            <h2 class="display display--lg" id="pathways-title">
+              Where experience<br>
+              <em>can take you.</em>
+            </h2>
+          </div>
+          <div class="section-head__aside">
+            <p>From central police forces to state government roles, private security and further skills development — explore the routes published through the official portal.</p>
+            <a class="link-arrow link-arrow--dark" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">
+              Official opportunities <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="path-grid">
+          <a class="path path--feature" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener" data-reveal>
+            <div class="path__media">
+              <img src="assets/img/path-capf.jpg"
+                   alt="Assam Rifles marching contingent at the Republic Day Parade in New Delhi."
+                   width="1400" height="1050" loading="lazy" decoding="async">
+              <span class="path__media-label">Featured pathway</span>
+            </div>
+            <div class="path__body">
+              <p class="path__meta"><span>01</span> Central Armed Police Forces · Assam Rifles</p>
+              <h3>CAPFs &amp; Assam Rifles</h3>
+              <p>Eligible vacancies notified by the Central Armed Police Forces and Assam Rifles, including information on reserved vacancies and age relaxation for Ex-Agniveers.</p>
+              <span class="path__cta">View official opportunities <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <a class="path path--text" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener" data-reveal data-reveal-delay="80">
+            <p class="path__meta"><span>02</span> Government</p>
+            <h3>State &amp; central government</h3>
+            <p>Recruitment notifications from Ministries, Departments and State/UT Governments, published through the official portal.</p>
+            <span class="path__cta">Official notifications <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="path path--text" href="https://careerprogression.mha.gov.in/faq" target="_blank" rel="noopener" data-reveal data-reveal-delay="120">
+            <p class="path__meta"><span>03</span> Private sector</p>
+            <h3>PSARA-registered employers</h3>
+            <p>Roles with private employers registered under the Private Security Agencies (Regulation) Act.</p>
+            <span class="path__cta">Private-sector pathway <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="path path--skills" href="https://careerprogression.mha.gov.in/agnipath" target="_blank" rel="noopener" data-reveal data-reveal-delay="80">
+            <p class="path__meta"><span>04</span> Capability</p>
+            <h3>Skills, training &amp; certification</h3>
+            <p>Information on skill mapping, reskilling and certification, including the Kaushal Praman Patra under NCVET and NSQF.</p>
+            <span class="path__cta">Skills information <span aria-hidden="true">↗</span></span>
+            <span class="path__stamp" aria-hidden="true">NCVET · NSQF</span>
+          </a>
+
+          <a class="path path--employers" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener" data-reveal data-reveal-delay="140">
+            <p class="path__meta"><span>05</span> For organisations</p>
+            <h3>Employers &amp; departments</h3>
+            <p>Authorised recruiting agencies, government departments, CAPFs, Assam Rifles and empanelled private employers can access the portal to connect with eligible Ex-Agniveers.</p>
+            <span class="path__cta">Employer access <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+
+        <p class="section-note section-note--dark" data-reveal>
+          Pathways reflect the scope described on the official Career Progression Portal. Specific vacancies, eligibility and timelines are determined by the recruiting organisation.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================ -->
+    <section class="section how" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__index">03</span> How it works</p>
+            <h2 class="display display--lg" id="how-title">
+              From service<br>
+              <em>to the next step.</em>
+            </h2>
+          </div>
+          <div class="section-head__aside">
+            <p>A simple route through the official platform — from understanding the initiative to taking the next step.</p>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <div class="step__top">
+              <span class="step__num">01</span>
+              <span class="step__line" aria-hidden="true"></span>
+            </div>
+            <h3>Understand</h3>
+            <p>Learn how the initiative supports Ex-Agniveers and what the portal is designed to do.</p>
+            <a class="step__link" href="#initiative">About the initiative <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="80">
+            <div class="step__top">
+              <span class="step__num">02</span>
+              <span class="step__line" aria-hidden="true"></span>
+            </div>
+            <h3>Sign in</h3>
+            <p>Registration is automatic for released Ex-Agniveers. Use the official login to access your details.</p>
+            <a class="step__link" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">Official login <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="160">
+            <div class="step__top">
+              <span class="step__num">03</span>
+              <span class="step__line" aria-hidden="true"></span>
+            </div>
+            <h3>Explore</h3>
+            <p>Review official notifications, career pathways and skills or training information.</p>
+            <a class="step__link" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Official portal <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="step" data-reveal data-reveal-delay="240">
+            <div class="step__top">
+              <span class="step__num">04</span>
+              <span class="step__line" aria-hidden="true"></span>
+            </div>
+            <h3>Take the next step</h3>
+            <p>Follow the eligibility, application and verification process set by the recruiting organisation.</p>
+            <a class="step__link" href="https://careerprogression.mha.gov.in/faq" target="_blank" rel="noopener">Official FAQs <span aria-hidden="true">↗</span></a>
+          </li>
+        </ol>
+
+        <div class="how__callout" data-reveal>
+          <div class="how__callout-item">
+            <p class="how__callout-label">Registration</p>
+            <p>Automatic for Ex-Agniveers already released from the Armed Forces under the Agnipath Scheme.</p>
+          </div>
+          <div class="how__callout-item">
+            <p class="how__callout-label">Sign-in assistance</p>
+            <p><a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+          </div>
+          <a class="btn btn--ghost" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">Official login <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OPPORTUNITIES & RESOURCES
+    ============================================================ -->
+    <section class="section opportunities" id="opportunities" aria-labelledby="opportunities-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="section-head__title">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__index">04</span> Opportunities &amp; resources</p>
+            <h2 class="display display--lg" id="opportunities-title">
+              The official<br>
+              <em>noticeboard.</em>
+            </h2>
+          </div>
+          <div class="section-head__aside">
+            <p>A snapshot of what the official portal published when this concept was prepared. Always verify current details at source.</p>
+            <p class="snapshot-tag"><span aria-hidden="true"></span> Snapshot · 17 October 2026</p>
+          </div>
+        </div>
+
+        <div class="board" data-reveal>
+          <div class="board__top">
+            <p>Official portal · Latest published notice</p>
+            <p>Verify at source before acting</p>
+          </div>
+
+          <div class="board__feature">
+            <div class="board__date" aria-label="Last date 23 October 2026">
+              <span class="board__date-label">Last date</span>
+              <strong>23</strong>
+              <span class="board__date-month">Oct 2026</span>
+            </div>
+            <div class="board__feature-copy">
+              <p class="board__kicker">Indian Air Force · First batch (01/22)</p>
+              <h3>Authentication of Part&nbsp;A and submission of Profile&nbsp;– Part&nbsp;B</h3>
+              <p>The official portal notice states that 23 October 2026 is the last date for Agniveers of the first batch (01/22) of the Indian Air Force to authenticate Part A and submit Profile – Part B.</p>
+              <a class="link-arrow link-arrow--light" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">View on the official portal <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="board__rows">
+            <a class="board-row" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">
+              <span class="board-row__index">01</span>
+              <span class="board-row__type">Current openings</span>
+              <span class="board-row__main">
+                <span class="board-row__title">No current openings were published when this snapshot was prepared.</span>
+                <span class="board-row__meta">Check the official portal for the latest list.</span>
+              </span>
+              <span class="board-row__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="board-row" href="https://careerprogression.mha.gov.in/about" target="_blank" rel="noopener">
+              <span class="board-row__index">02</span>
+              <span class="board-row__type">Resource</span>
+              <span class="board-row__main">
+                <span class="board-row__title">Career Progression overview</span>
+                <span class="board-row__meta">Ministry of Home Affairs</span>
+              </span>
+              <span class="board-row__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="board-row" href="https://careerprogression.mha.gov.in/agnipath" target="_blank" rel="noopener">
+              <span class="board-row__index">03</span>
+              <span class="board-row__type">Resource</span>
+              <span class="board-row__main">
+                <span class="board-row__title">Agnipath Scheme — official framework</span>
+                <span class="board-row__meta">Programme information · Official portal</span>
+              </span>
+              <span class="board-row__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="board-row" href="https://careerprogression.mha.gov.in/faq" target="_blank" rel="noopener">
+              <span class="board-row__index">04</span>
+              <span class="board-row__type">Guidance</span>
+              <span class="board-row__main">
+                <span class="board-row__title">Frequently Asked Questions</span>
+                <span class="board-row__meta">Official guidance for Ex-Agniveers and employers</span>
+              </span>
+              <span class="board-row__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="board-row" href="https://careerprogression.mha.gov.in/contact" target="_blank" rel="noopener">
+              <span class="board-row__index">05</span>
+              <span class="board-row__type">Contact</span>
+              <span class="board-row__main">
+                <span class="board-row__title">Contact &amp; helpdesk</span>
+                <span class="board-row__meta">Ministry of Home Affairs · Portal support</span>
+              </span>
+              <span class="board-row__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="section-note section-note--light" data-reveal>
+          This is a design concept. Live listings, deadlines and application processes are maintained only on the official Career Progression Portal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS / EXPERIENCE
+    ============================================================ -->
+    <section class="section skills" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="skills__grid">
+          <figure class="skills__figure" data-reveal>
+            <div class="skills__image-wrap">
+              <img src="assets/img/skills-women.jpg"
+                   alt="Two women officers of the Indian Army in uniform in Bhopal."
+                   width="1200" height="1600" loading="lazy" decoding="async">
+              <span class="image-index image-index--light" aria-hidden="true">SERVICE / 05</span>
+            </div>
+            <figcaption>
+              <span>Indian Army officers in Bhopal.</span>
+              <a href="#credits">Image credit</a>
+            </figcaption>
+          </figure>
+
+          <div class="skills__copy" data-reveal data-reveal-delay="120">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow__index">05</span> Experience</p>
+            <h2 class="display display--lg" id="experience-title">
+              Carry the<br>
+              <em>experience forward.</em>
+            </h2>
+            <p class="lead">
+              What you carry forward is not only experience — it is capability. The habits built in service are a foundation for the next professional chapter.
+            </p>
+
+            <ul class="skill-list">
+              <li>
+                <span class="skill-list__num">01</span>
+                <span class="skill-list__name">Discipline</span>
+                <span class="skill-list__desc">Consistency, responsibility and composure under pressure.</span>
+              </li>
+              <li>
+                <span class="skill-list__num">02</span>
+                <span class="skill-list__name">Leadership</span>
+                <span class="skill-list__desc">Experience of taking responsibility for people, decisions and outcomes.</span>
+              </li>
+              <li>
+                <span class="skill-list__num">03</span>
+                <span class="skill-list__name">Teamwork</span>
+                <span class="skill-list__desc">Working across roles and backgrounds towards a shared objective.</span>
+              </li>
+              <li>
+                <span class="skill-list__num">04</span>
+                <span class="skill-list__name">Adaptability</span>
+                <span class="skill-list__desc">Operating in unfamiliar conditions and adjusting to change.</span>
+              </li>
+              <li>
+                <span class="skill-list__num">05</span>
+                <span class="skill-list__name">Practical experience</span>
+                <span class="skill-list__desc">Hands-on technical, operational and human skills developed through service.</span>
+              </li>
+            </ul>
+
+            <aside class="skills__note">
+              <p>The Agnipath framework includes skill certification and mapping, including the Kaushal Praman Patra through NCVET and NSQF. Recognition and eligibility are subject to the applicable scheme and certification authorities.</p>
+              <a class="link-arrow link-arrow--light" href="https://careerprogression.mha.gov.in/agnipath" target="_blank" rel="noopener">Read the official framework <span aria-hidden="true">↗</span></a>
+            </aside>
+          </div>
+        </div>
+
+        <div class="progression-line" aria-label="The progression journey: service, skills, transition, next step" data-reveal>
+          <span>Service</span>
+          <span class="progression-line__arrow" aria-hidden="true">→</span>
+          <span>Skills</span>
+          <span class="progression-line__arrow" aria-hidden="true">→</span>
+          <span>Transition</span>
+          <span class="progression-line__arrow" aria-hidden="true">→</span>
+          <span>Next step</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section class="section section--paper faq" id="faqs" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq__grid">
+          <div class="faq__intro" data-reveal>
+            <p class="eyebrow eyebrow--dark"><span class="eyebrow__index">06</span> Frequently asked questions</p>
+            <h2 class="display display--lg" id="faq-title">
+              Questions,<br>
+              <em>answered.</em>
+            </h2>
+            <p class="body-copy">
+              Official answers to the questions Ex-Agniveers and employers ask most often. Reproduced from the Ministry of Home Affairs portal.
+            </p>
+            <a class="btn btn--dark" href="https://careerprogression.mha.gov.in/faq" target="_blank" rel="noopener">Read the full official FAQ <span aria-hidden="true">↗</span></a>
+            <div class="faq__contact">
+              <p class="faq__contact-label">Still need help?</p>
+              <p>Visit <a href="https://careerprogression.mha.gov.in/contact" target="_blank" rel="noopener">Contact Us</a> on the official portal or write to <a href="mailto:jscpg-mha@mha.gov.in">jscpg-mha@mha.gov.in</a>.</p>
+            </div>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <div class="accordion__item is-open">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="true" aria-controls="faq-panel-1" id="faq-trigger-1">
+                  <span class="accordion__index">01</span>
+                  <span class="accordion__question">What is the Career Progression?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                <div class="accordion__panel-inner">
+                  <p>The Career Progression is a centralized digital platform designed to support Ex-Agniveers after the completion of their engagement under the Agnipath Scheme. The portal facilitates access to employment opportunities, skill certifications, training programs, recruitment notifications and rehabilitation initiatives offered by various Ministries, Departments, Organizations of the Union Government, State/UT Governments and Administrations, as well as Private Security Agencies (Regulation) Act (PSARA).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                  <span class="accordion__index">02</span>
+                  <span class="accordion__question">Who can register on the Career Progression?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+                <div class="accordion__panel-inner">
+                  <p>Registration of all Ex-Agniveers who have already been released from the Armed Forces under the Agnipath Scheme will be automatic on the portal. Registration is also enabled for authorized recruiting agencies, Government Departments, CAPFs, Assam Rifles, State/UT authorities and empanelled private employers.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                  <span class="accordion__index">03</span>
+                  <span class="accordion__question">What services are available through the portal?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+                <div class="accordion__panel-inner">
+                  <p>The portal provides several services, including:</p>
+                  <ul>
+                    <li>Employment opportunities in CAPFs and Assam Rifles.</li>
+                    <li>State and Central Government recruitment notifications.</li>
+                    <li>Skill mapping and career counselling.</li>
+                    <li>Access to training, reskilling and certification programs.</li>
+                    <li>Job opportunities in private sector organizations registered under PSARA.</li>
+                    <li>Document repository and verification services.</li>
+                    <li>Notifications regarding reserved vacancies and special recruitment drives.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                  <span class="accordion__index">04</span>
+                  <span class="accordion__question">How can an Ex-Agniveer update personal information?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+                <div class="accordion__panel-inner">
+                  <p>Ex-Agniveers, after login can update some basic details by using their Service Number, registered mobile number and other authentication credentials provided by the concerned Service Headquarters. Following verification, users can update address, qualifications, certifications etc.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+                  <span class="accordion__index">05</span>
+                  <span class="accordion__question">Can Ex-Agniveers apply for CAPFs and Assam Rifles vacancies through the portal?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+                <div class="accordion__panel-inner">
+                  <p>Yes. Eligible vacancies notified by CAPFs and Assam Rifles will be published on the portal. Ex-Agniveers may view eligibility criteria, submit applications through integrated recruitment systems where available and track the status of their applications.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+                  <span class="accordion__index">06</span>
+                  <span class="accordion__question">Will the portal provide information about reservations or relaxations?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+                <div class="accordion__panel-inner">
+                  <p>Yes. The portal will display updated information regarding age relaxations, reservation benefits, priority categories and other policy provisions announced by the MoD, MHA, State Governments, CAPFs, Assam Rifles and other participating organizations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <h3>
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-7" id="faq-trigger-7">
+                  <span class="accordion__index">07</span>
+                  <span class="accordion__question">Whom should I contact if I face issues while using the portal?</span>
+                  <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="accordion__panel" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7">
+                <div class="accordion__panel-inner">
+                  <p>Users can access the Helpdesk section available on the portal for technical assistance, account-related queries and grievance redressal. Support may be provided through email, telephone helplines, ticket-based support systems and designated nodal officers from the concerned Ministries, Services, CAPFs, or State/UT Governments.</p>
+                  <p class="accordion__contacts">Official contacts listed on the portal: <a href="mailto:jscpg-mha@mha.gov.in">jscpg-mha@mha.gov.in</a> · <a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="section-note section-note--dark" data-reveal>
+          Answers are reproduced from the official FAQ page and were last reviewed on 17 October 2026. Verify current guidance at source.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL CTA
+    ============================================================ -->
+    <section class="cta" id="next-step" aria-labelledby="cta-title">
+      <div class="cta__media" aria-hidden="true">
+        <img src="assets/img/cta-siachen.jpg" alt="" width="2200" height="1000" loading="lazy" decoding="async">
+      </div>
+      <div class="cta__overlay" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__index">07</span> Next step</p>
+        <h2 class="display cta__title" id="cta-title" data-reveal>
+          Your next chapter<br>
+          starts with <em>a step forward.</em>
+        </h2>
+        <p class="cta__lede" data-reveal>
+          Sign in to the official Career Progression Portal to review your details and the opportunities published for Ex-Agniveers. Authorised employers and departments can use the same portal to access their pathway.
+        </p>
+        <div class="cta__actions" data-reveal>
+          <a class="btn btn--solid" href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">Sign in to the official portal <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Explore the official portal <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="cta__meta" data-reveal>
+          <p>Login opens the official Government of India portal in a new tab. No login is handled on this concept page.</p>
+          <p>Sign-in help: <a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/emblem.png" alt="" width="60" height="100" loading="lazy">
+          <div>
+            <p class="footer__gov">Government of India</p>
+            <p class="footer__ministry">Ministry of Home Affairs</p>
+            <p class="footer__portal">Career Progression Portal</p>
+          </div>
+        </div>
+        <p class="footer__statement">Built through service.<br><em>Ready for what’s next.</em></p>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h2 class="footer__heading">Explore</h2>
+          <ul>
+            <li><a href="#initiative">The initiative</a></li>
+            <li><a href="#pathways">Career pathways</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__heading">Official portal</h2>
+          <ul>
+            <li><a href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Official home <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/auth/userlogin" target="_blank" rel="noopener">Login <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Current openings <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/about" target="_blank" rel="noopener">About the initiative <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/agnipath" target="_blank" rel="noopener">Agnipath Scheme <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/grievance" target="_blank" rel="noopener">Public grievance <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/feedback" target="_blank" rel="noopener">Feedback <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/contact" target="_blank" rel="noopener">Contact Us <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__heading">Policies</h2>
+          <ul>
+            <li><a href="https://careerprogression.mha.gov.in/website-policies" target="_blank" rel="noopener">Website Policies <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/terms-conditions" target="_blank" rel="noopener">Terms &amp; Conditions <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://careerprogression.mha.gov.in/faq" target="_blank" rel="noopener">Official FAQs <span aria-hidden="true">↗</span></a></li>
+            <li><button class="footer__button" type="button" data-a11y-open aria-haspopup="dialog" aria-controls="a11y-dialog">Accessibility options</button></li>
+            <li><a href="#credits">Image credits &amp; sources</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--contact">
+          <h2 class="footer__heading">Contact</h2>
+          <address>
+            Room No. 34089, 4th Floor,<br>
+            Kartavya Bhavan 3,<br>
+            New Delhi – 110001, India
+          </address>
+          <p><a href="mailto:jscpg-mha@mha.gov.in">jscpg-mha@mha.gov.in</a><br>
+            <a href="mailto:support@agniveer.nic.in">support@agniveer.nic.in</a><br>
+            <a href="mailto:ex-agniveerhelpdesk@mha.gov.in">ex-agniveerhelpdesk@mha.gov.in</a></p>
+          <p class="footer__hours">Monday–Friday, 9:00 AM – 6:00 PM<br>Saturday–Sunday closed (National Holidays Observed)</p>
+        </div>
+      </div>
+
+      <div class="footer__gov-row">
+        <div class="footer__gov-links">
+          <p class="footer__heading">Government resources</p>
+          <div class="footer__gov-links-list">
+            <a href="https://www.india.gov.in/" target="_blank" rel="noopener">National Portal of India <span aria-hidden="true">↗</span></a>
+            <a href="https://www.digitalindia.gov.in/" target="_blank" rel="noopener">Digital India <span aria-hidden="true">↗</span></a>
+            <a href="https://www.mygov.in/" target="_blank" rel="noopener">MyGov <span aria-hidden="true">↗</span></a>
+            <a href="https://pmnrf.gov.in/" target="_blank" rel="noopener">PMNRF <span aria-hidden="true">↗</span></a>
+            <a href="https://data.gov.in/" target="_blank" rel="noopener">Data.gov.in <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="footer__nic">
+          <img src="assets/img/nic-logo.svg" alt="National Informatics Centre" width="322" height="92" loading="lazy">
+          <p>The official Career Progression Portal is designed, developed and hosted by the National Informatics Centre (NIC).</p>
+        </div>
+      </div>
+
+      <details class="credits" id="credits">
+        <summary>Image credits &amp; sources</summary>
+        <div class="credits__body">
+          <p class="credits__intro">Photographs are used for illustrative purposes in this design concept. Images have been cropped and resized. Attribution and licence details are preserved below.</p>
+          <ul>
+            <li>
+              <strong>Hero — Indian Army personnel during a training exercise.</strong>
+              Photograph by Sgt. Michael J. MacLeod, U.S. Army. Public domain.
+              <a href="https://commons.wikimedia.org/wiki/File:Indian_Army_soldiers_with_the_99th_Mountain_Brigade%27s_2nd_Battalion,_5th_Gurkha_Rifles,_move_through_the_forests_of_western_Fort_Bragg_during_a_training_exercise_with_U.S._Army_paratroopers.jpg" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <strong>Initiative — Indian Army soldiers at India Gate.</strong>
+              Photograph by KCVelaga. Licensed under CC BY-SA 4.0.
+              <a href="https://commons.wikimedia.org/wiki/File:Indian_Army_soldiers_at_India_Gate.jpg" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Licence <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <strong>Pathways — Assam Rifles marching contingent, Republic Day 2012.</strong>
+              Photograph by the Ministry of Defence, Government of India. GODL-India.
+              <a href="https://commons.wikimedia.org/wiki/File:Assam_Rifles_marching_contingent_passes_through_the_Rajpath_during_the_63rd_Republic_Day_Parade-2012,_in_New_Delhi_on_January_26,_2012.jpg" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+              <a href="https://commons.wikimedia.org/wiki/Template:GODL-India" target="_blank" rel="noopener">Licence <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <strong>Experience — Women Army officers in Bhopal.</strong>
+              Photograph by Suyash Dwivedi. Licensed under CC BY-SA 4.0.
+              <a href="https://commons.wikimedia.org/wiki/File:Women_Army_Officers_in_Bhopal_(4).jpg" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Licence <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <strong>Next step — Siachen warriors.</strong>
+              Photograph by Arshsangh. Licensed under CC BY-SA 4.0.
+              <a href="https://commons.wikimedia.org/wiki/File:Siachen_warriors.jpg" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Licence <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <strong>National Emblem and NIC logo.</strong>
+              Reproduced from the official Career Progression Portal, Ministry of Home Affairs.
+              <a href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">Official portal <span aria-hidden="true">↗</span></a>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <p class="footer__wordmark" aria-hidden="true">Career Progression</p>
+
+      <div class="footer__bottom">
+        <p>Official portal content is owned &amp; provided by the Ministry of Home Affairs, Government of India. The official portal is designed, developed and hosted by the National Informatics Centre (NIC). © 2026.</p>
+        <p class="footer__concept"><strong>Design concept.</strong> This page is an independent redesign concept and is not an official Government of India website. For official information and services, visit <a href="https://careerprogression.mha.gov.in/" target="_blank" rel="noopener">careerprogression.mha.gov.in</a>.</p>
+        <a class="footer__top-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <!-- ============================================================
+       ACCESSIBILITY DIALOG
+  ============================================================ -->
+  <dialog class="a11y-dialog" id="a11y-dialog" aria-labelledby="a11y-title" data-a11y-dialog>
+    <div class="a11y-dialog__head">
+      <div>
+        <p class="eyebrow eyebrow--dark">Accessibility</p>
+        <h2 id="a11y-title">Reading options</h2>
+      </div>
+      <button class="a11y-dialog__close" type="button" aria-label="Close accessibility options" data-a11y-close>
+        <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+    <p class="a11y-dialog__intro">Adjust how this page displays. Your preferences are saved in this browser only.</p>
+
+    <div class="a11y-row">
+      <span class="a11y-row__label" id="a11y-text-label">Text size</span>
+      <div class="a11y-sizes" role="group" aria-labelledby="a11y-text-label">
+        <button type="button" data-textsize-btn="base" aria-pressed="true">Default</button>
+        <button type="button" data-textsize-btn="large" aria-pressed="false">Large</button>
+        <button type="button" data-textsize-btn="xlarge" aria-pressed="false">Larger</button>
+      </div>
+    </div>
+
+    <button class="a11y-toggle" type="button" data-toggle-contrast aria-pressed="false">
+      <span><strong>High contrast</strong><small>Increase foreground and background contrast.</small></span>
+      <span class="a11y-toggle__switch" aria-hidden="true"></span>
+    </button>
+
+    <button class="a11y-toggle" type="button" data-toggle-motion aria-pressed="false">
+      <span><strong>Reduce motion</strong><small>Limit transitions, reveals and image movement.</small></span>
+      <span class="a11y-toggle__switch" aria-hidden="true"></span>
+    </button>
+
+    <button class="a11y-reset" type="button" data-a11y-reset>Reset preferences</button>
+    <p class="a11y-dialog__note">This concept page does not collect personal data. For the official portal's accessibility options, visit the official website.</p>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
