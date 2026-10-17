@@ -4,6 +4,13 @@ A premium, editorial redesign of the **Ministry of Home Affairs Career Progressi
 
 > **Design concept only.** This is an independent redesign concept. It is not an official Government of India website and does not collect applications, payments or personal data. The official portal remains at [careerprogression.mha.gov.in](https://careerprogression.mha.gov.in/).
 
+## Live deployment
+
+- **Production:** [mha-career-progression.vercel.app](https://mha-career-progression.vercel.app/)
+- **Source:** [github.com/varunmehra275-dev/Web-page](https://github.com/varunmehra275-dev/Web-page)
+- **Vercel project:** `varun-1ddb/mha-career-progression`
+- The GitHub `main` branch is connected to Vercel. Pushes to `main` deploy automatically.
+
 ---
 
 ## 1. What this is
