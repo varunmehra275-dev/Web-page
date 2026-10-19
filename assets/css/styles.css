@@ -542,9 +542,11 @@ ul, ol { padding: 0; }
 
 .brand__emblem {
   width: auto;
-  height: 39px;
-  filter: brightness(0) invert(1);
-  opacity: 0.96;
+  height: 46px;
+  flex: 0 0 auto;
+  padding: 4px 5px;
+  background: var(--bone);
+  filter: none;
 }
 
 .brand__identity {
@@ -2039,6 +2041,74 @@ body.menu-open .menu-toggle__bars span:last-child { transform: translateY(-3.25p
 .cta__meta a:hover { color: var(--saffron-soft); border-color: var(--saffron-soft); }
 
 /* ==========================================================================
+   GOVERNMENT OF INDIA RESOURCE BAND
+   ========================================================================== */
+.gov-band {
+  background: var(--paper);
+  color: var(--text-dark);
+  border-top: 1px solid var(--line-dark-soft);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.gov-band__inner {
+  display: grid;
+  grid-template-columns: minmax(220px, 290px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+  padding-block: 24px;
+}
+
+.gov-band__title {
+  margin-top: 8px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--text-dark);
+}
+
+.gov-band__note {
+  margin-top: 5px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #565950;
+}
+
+.gov-band__logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+}
+
+.gov-band__logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 14px;
+  border-left: 1px solid var(--line-dark-soft);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.gov-band__logos a:first-child { border-left: 0; }
+.gov-band__logos a:hover { opacity: 0.72; transform: translateY(-1px); }
+
+.gov-band__logos img {
+  width: auto;
+  height: 42px;
+  max-width: 135px;
+  object-fit: contain;
+}
+
+html.contrast-high .gov-band {
+  background: #ffffff;
+  color: #000000;
+}
+html.contrast-high .gov-band__note { color: #000000; }
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .site-footer {
@@ -2064,9 +2134,10 @@ body.menu-open .menu-toggle__bars span:last-child { transform: translateY(-3.25p
 }
 .footer__brand img {
   width: auto;
-  height: 54px;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+  height: 64px;
+  padding: 5px 7px;
+  background: var(--bone);
+  filter: none;
 }
 
 .footer__gov {
@@ -2181,21 +2252,6 @@ body.menu-open .menu-toggle__bars span:last-child { transform: translateY(-3.25p
   padding: 32px 0;
   border-bottom: 1px solid var(--line);
 }
-
-.footer__gov-links { flex: 1; }
-.footer__gov-links-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 28px;
-}
-.footer__gov-links-list a {
-  font-size: 11.5px;
-  line-height: 1.6;
-  color: #999d94;
-  transition: color 0.2s;
-}
-.footer__gov-links-list a span { font-size: 9px; color: #6e7269; }
-.footer__gov-links-list a:hover { color: var(--saffron-soft); }
 
 .footer__nic {
   display: flex;
@@ -2613,7 +2669,6 @@ html.contrast-high .footer__concept strong,
 html.contrast-high .footer__concept a,
 html.contrast-high .footer__hours,
 html.contrast-high .footer__nic p,
-html.contrast-high .footer__gov-links-list a,
 html.contrast-high .credits summary,
 html.contrast-high .credits__intro,
 html.contrast-high .credits__body li,
@@ -2707,6 +2762,21 @@ html.reduce-motion .hero__media img { transform: scale(1.03) !important; }
   }
   .skill-list__name { font-size: 15.5px; }
   .skill-list__desc { font-size: 12px; }
+
+  .gov-band__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .gov-band__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .gov-band__note {
+    margin-top: 0;
+    text-align: right;
+  }
 }
 
 /* ==========================================================================
@@ -2779,7 +2849,7 @@ html.reduce-motion .hero__media img { transform: scale(1.03) !important; }
   .site-header.is-scrolled .header-main { height: 60px; }
 
   .brand { gap: 10px; }
-  .brand__emblem { height: 31px; }
+  .brand__emblem { height: 38px; padding: 3px 4px; }
   .brand__identity { gap: 0; }
   .brand__gov { font-size: 7px; letter-spacing: 0.12em; }
   .brand__ministry { font-size: 10px; }
@@ -2910,9 +2980,29 @@ html.reduce-motion .hero__media img { transform: scale(1.03) !important; }
   .cta__actions .btn { width: 100%; justify-content: space-between; }
   .cta__meta { margin-top: 38px; font-size: 8.5px; }
 
+  .gov-band__inner { padding-block: 22px; gap: 16px; }
+  .gov-band__head { display: block; }
+  .gov-band__note { text-align: left; margin-top: 5px; }
+  .gov-band__title { font-size: 14px; }
+  .gov-band__logos { grid-template-columns: 1fr 1fr; }
+  .gov-band__logos a {
+    min-height: 74px;
+    padding: 12px;
+    border-left: 0;
+    border-top: 1px solid var(--line-dark-soft);
+  }
+  .gov-band__logos a:nth-child(1),
+  .gov-band__logos a:nth-child(2) { border-top: 0; }
+  .gov-band__logos a:nth-child(odd) { border-right: 1px solid var(--line-dark-soft); }
+  .gov-band__logos a:last-child {
+    grid-column: 1 / -1;
+    border-right: 0;
+  }
+  .gov-band__logos img { height: 34px; max-width: 120px; }
+
   .site-footer { padding-top: 56px; }
   .footer__top { flex-direction: column; align-items: flex-start; gap: 26px; padding-bottom: 34px; }
-  .footer__brand img { height: 44px; }
+  .footer__brand img { height: 54px; }
   .footer__ministry { font-size: 18px; }
   .footer__statement { text-align: left; font-size: 22px; }
   .footer__grid { grid-template-columns: 1fr 1fr; gap: 34px 24px; padding: 36px 0 40px; }

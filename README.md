@@ -82,6 +82,11 @@ mha-career-portal/
     └── img/
         ├── emblem.png          # National Emblem, from the official portal
         ├── nic-logo.svg        # NIC logo, from the official portal
+        ├── gov-digital-india.png
+        ├── gov-india-gov.png
+        ├── gov-pmnrf.png
+        ├── gov-mygov.png
+        ├── gov-data-gov.png
         ├── favicon-64.png
         ├── favicon-180.png
         ├── hero-army-2000.jpg
@@ -106,7 +111,8 @@ mha-career-portal/
 8. **Experience** — a general, non-fabricated reflection on discipline, leadership, teamwork, adaptability and practical experience, with the official NCVET/NSQF certification context.
 9. **FAQs** — seven answers reproduced from the official FAQ page, with accessible accordion behaviour and a link to the full official FAQ.
 10. **Final call to action** — "Your next chapter starts with a step forward." with official login and portal links.
-11. **Footer** — official identity, contact details, policies, terms, accessibility options, government resources, NIC attribution, image credits, copyright and a clear design-concept disclaimer.
+11. **Government resource band** — the five official Government of India resource logos used on the MHA portal: Digital India, National Portal of India, PMNRF, MyGov and Data.gov.in. Each logo links to its official website.
+12. **Footer** — official identity, contact details, policies, terms, accessibility options, NIC attribution, image credits, copyright and a clear design-concept disclaimer.
 
 ---
 
@@ -193,6 +199,7 @@ Images are illustrative, cropped and resized for this concept. Attribution and l
 | Experience | Women Army officers in Bhopal. Photograph by Suyash Dwivedi. | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Women_Army_Officers_in_Bhopal_(4).jpg) |
 | Next step | Siachen warriors. Photograph by Arshsangh. | CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Siachen_warriors.jpg) |
 | Identity | National Emblem and NIC logo. | Official portal identity | [Official portal](https://careerprogression.mha.gov.in/) |
+| Government resources | Digital India, National Portal of India, PMNRF, MyGov and Data.gov.in logos, scraped from the official portal and cropped only to remove transparent padding. | Official portal identity | [Official portal](https://careerprogression.mha.gov.in/) |
 
 CC BY-SA 4.0: <https://creativecommons.org/licenses/by-sa/4.0/>  
 GODL-India: <https://commons.wikimedia.org/wiki/Template:GODL-India>
